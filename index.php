@@ -33,11 +33,11 @@
 
     <ul>
     <?php foreach ($titles as $title) : ?>
-        <ol class="ol">
+        <li class="li">
             <a href="<?= $title['file']; ?>" target="_blank" rel="noopener">
             <?= $title['title']; ?>
             </a>
-        </ol>
+        </li>
     <?php endforeach; ?>
     </ul>
 </body>

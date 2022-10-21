@@ -1,4 +1,4 @@
-body{
+body {
     display: grid;
     place-items: center;
     height: 100vh;
@@ -6,13 +6,28 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: #565656;
+    background-color: #303030;
     color: white;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
+
+a,
+td,
+li,
+ol {
+    font-size: 1.6rem;
+}
+
+img {
+    width: 683px;
+    height: 341px;
+    padding: 2rem;
+}
+
 .index {
     background-color: black;
 }
+
 .h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
@@ -20,7 +35,8 @@ body{
     text-transform: uppercase;
     color: white;
 }
-.ol {
+
+.li {
     line-height: 2rem;
     padding: 1rem;
     margin: 1rem;
@@ -28,56 +44,68 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 24px;
-    
+    list-style-type: decimal-leading-zero;
+
 }
-.ol > a {
+
+.li>a {
     text-decoration: none;
     color: coral;
 }
-.ol>a:hover{
-    color:rgb(69 211 255 / 27%);
+
+
+a {
+    color: rgb(250, 233, 202);
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-underline-offset: 7px;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: rgb(113, 170, 255);
     text-decoration: underline;
     text-decoration-color: #FF5823;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 5px;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 7px;
 }
-li{
+
+li {
     font-weight: 700;
-    font-style: italic;
     color: rgb(113, 170, 255);
+    margin: 1rem;
+    padding: 1rem;
 }
+
 tbody {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    
+
 }
 
 #tableHeader {
-    background-color: blue;
-    color: yellowgreen;
+    background-color: #00003b;
+    color: #b8dc70;
     padding: 1rem;
 }
+
 table td {
     height: 5rem;
-    /* overflow: hidden; */
     display: flex;
-    /* white-space: nowrap; */
     align-items: center;
     justify-content: center;
 }
-th {width: 100%;}
+
+th {
+    width: 100%;
+}
+
 td {
     border: 1px solid #fff;
     text-align: center;
     padding: 1rem;
     column-count: 1;
     column-gap: 1rem;
-}
-td>a {
-    color: rgb(250, 233, 202);
-    text-decoration: underline;
-    text-decoration-color: blue;
-    text-underline-offset: 7px;
-    line-height: 2rem;
 }
