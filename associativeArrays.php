@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Recommended Books Using PHP</h1>
-    <?php 
+    <?php $img = 'https://fivebooks.com/app/uploads/2020/08/most-recommended-books-share-image.jpg';
         $books = [
             [ 
                 'title' => "Catch 22",
@@ -29,7 +29,7 @@
             ],
         ];
     ?>
-
+    <img src="<?= $img;?>" alt="banner">
         <!-- <ul>
             <?php foreach ($books as $book) : ?>
                 <li>
@@ -53,10 +53,6 @@
                 <a href="<?= $book['purchaseUrl']; ?>" target="_blank" rel="noopener">
                     <?= $book['title']; ?>
                 </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
                 - By <?= $book['author']; ?>
             </td>
         </tr>

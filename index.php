@@ -1,25 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Démo PHP 1.0</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sommaire</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>
-        <?php 
-        $greeting = "Hello,"; 
-        $whoWhat= "La Concaténation";
-            echo  "$greeting $whoWhat";
-        ?>
-    </h1>
-    <p>
-        <?php 
-            echo "ceci est un paragraphe";
-        ?>
-    </p>
+<body class="index">
+    <?php 
+        $titles = [
+            [
+                'title' => "Syntaxe",
+                'file' => "phpSyntax.php",
+            ],
+            [
+                'title' => "Booleans & Conditionnelles",
+                'file' => "boolean.php",
+            ],
+            [
+                'title' => "Arrays",
+                'file' => "arrays.php",
+            ],
+            [
+                'title' => "Associative Arrays",
+                'file' => "associativeArrays.php",
+            ],
+        ]
+    ?>
+
+    <h1 class="h1">Sommaire</h1>
+
+    <ul>
+    <?php foreach ($titles as $title) : ?>
+        <ol class="ol">
+            <a href="<?= $title['file']; ?>" target="_blank" rel="noopener">
+            <?= $title['title']; ?>
+            </a>
+        </ol>
+    <?php endforeach; ?>
+    </ul>
 </body>
 </html>

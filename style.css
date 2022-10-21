@@ -10,6 +10,37 @@ body{
     color: white;
     font-size: 1.2rem;
 }
+.index {
+    background-color: black;
+}
+.h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+.ol {
+    line-height: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    
+}
+.ol > a {
+    text-decoration: none;
+    color: coral;
+}
+.ol>a:hover{
+    color:rgb(69 211 255 / 27%);
+    text-decoration: underline;
+    text-decoration-color: #FF5823;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 5px;
+}
 li{
     font-weight: 700;
     font-style: italic;
@@ -29,18 +60,21 @@ tbody {
 }
 table td {
     height: 5rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     align-items: center;
     justify-content: center;
 }
+th {width: 100%;}
 td {
     border: 1px solid #fff;
     text-align: center;
     padding: 1rem;
+    column-count: 1;
+    column-gap: 1rem;
 }
-a {
+td>a {
     color: rgb(250, 233, 202);
     text-decoration: underline;
     text-decoration-color: blue;
