@@ -26,6 +26,14 @@
                 'title' => "Associative Arrays",
                 'file' => "associativeArrays.php",
             ],
+            [
+                'title' => "Functions & Filters",
+                'file' => "functionsFilters.php",
+            ],
+            [
+                'title' => "Filters EXAMPLE",
+                'file' => "functionsFilters_example.php",
+            ],
         ]
     ?>
 

@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Recommended Books</h1>
+    <div>
+        <h1>Recommended Books Using PHP</h1>
+        <p style="text-align: center; font-size:15px;">(arrays)</p>
+    </div>
     <?php 
         $books = [
             "Catch 22",
